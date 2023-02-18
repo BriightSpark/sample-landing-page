@@ -1,0 +1,13 @@
+@import './comps/item.scss';
+
+.listing-wrapper {
+  background: #F7F7F7;
+
+  .listing {
+    padding: 50px 0;
+
+    &__heading {
+      text-align: center;
+    }
+  }
+}

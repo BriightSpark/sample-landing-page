@@ -1,0 +1,47 @@
+@import '../components';
+@import './fonts';
+@import './typography';
+
+body {
+  --transition-time: 150ms;
+  --color-white: #FFF;
+  --color-black: #1E1E1E;
+  --color-primary: #E58411;
+  --color-secondary: #0D1B39;
+
+  --screen-gutter-mobile: 24px;
+  --screen-gutter-desktop: 80px;
+
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.max-width {
+  max-width: 1440px;
+  padding: 0 var(--screen-gutter-mobile);
+  margin: auto;
+  overflow: visible;
+
+  @media (min-width: 768px) {
+    padding: 0 var(--screen-gutter-desktop);
+  }
+}
+
+a {
+  color: var(--color-white);
+  transition: var(--transition-time);
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-primary)
+  }
+}
+
+input, button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}

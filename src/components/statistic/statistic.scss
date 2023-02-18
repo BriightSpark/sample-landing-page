@@ -1,0 +1,17 @@
+@import './comp/stat';
+
+.statistic {
+  gap: 16px;
+  margin: 60px 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    margin: 120px 0;
+  }
+
+  > * {
+    flex: 1;
+  }
+}

@@ -1,0 +1,39 @@
+.stat {
+  color: var(--color-black);
+
+  h4 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+
+    color: var(--color-primary);
+    transition: all var(--transition-time) ease;
+
+    &:hover {
+      color: var(--color-black);
+
+      &::after {
+        margin-left: 20px;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: relative;
+      margin-left: 10px;
+
+      width: 39px;
+      height: 13px;
+      background: url('../../../../public/svg/arrow-right.svg');
+      transition: all var(--transition-time) ease;
+    }
+  }
+}

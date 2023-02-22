@@ -1,0 +1,117 @@
+.single-teaser-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  .single-teaser {
+    padding-top: 0;
+    
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 80px;
+      padding-top: 240px;
+    }
+
+    &__image {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      
+      @media (min-width: 768px) {
+        padding-top: 70px;
+        width: auto;
+      }
+
+      &--hidden {
+        position: relative;
+        padding: 0;
+        opacity: 0;
+        width: 100vw;
+
+        @media (min-width: 768px) {
+          padding: 70px 60px 0 0;
+          width: auto;
+        }
+      }
+
+      &-backdrop {
+        @media (min-width: 768px) {
+          position: absolute;
+          left: 0;
+          width: 500px;
+          height: 300px;
+          background: #F7F7F7;
+          z-index: -1;
+          border-radius: 20px;;
+
+          &--1 {
+            top: 240px;
+          }
+          
+          &--2 {
+            width: 600px;
+            top: 380px;
+            left: 60px;
+          }
+        }
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 0;
+
+      @media (min-width: 768px) {
+        padding: 0;
+        margin: 0;
+      }
+
+      > * {
+        padding: 0;
+        margin: 0;
+      }
+
+      &-pretitle {
+        text-transform: uppercase;
+        color: var(--color-primary);
+        margin-bottom: 20px;
+      }
+
+      &-title {
+        text-transform: capitalize;
+        margin-bottom: 20px;
+      }
+
+      &-description {
+        margin-bottom: 24px;
+      }
+
+      &-button {
+        color: var(--color-primary);
+
+        &:hover {
+          color: var(--color-black);
+
+          &::after {
+            margin-left: 30px;
+          }
+        }
+
+        &::after {
+          content: '';
+          display: inline-block;
+          position: relative;
+          margin-left: 10px;
+
+          width: 39px;
+          height: 13px;
+          background: url('../../../public/svg/arrow-right.svg');
+          transition: all var(--transition-time) ease;
+        }
+      }
+    }
+  }
+}

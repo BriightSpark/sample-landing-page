@@ -4,7 +4,9 @@ import {
   Footer,
   HeroBanner,
   Statistic,
-  Listing
+  Listing,
+  SingleTeaser,
+  MultipleTeaser
 } from './components';
 
 import './styles/index.scss';
@@ -17,6 +19,8 @@ function App() {
         <HeroBanner />
         <Statistic />
         <Listing />
+        <SingleTeaser />
+        <MultipleTeaser />
       </main>
       <Footer />
     </>

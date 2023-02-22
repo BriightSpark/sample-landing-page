@@ -23,7 +23,7 @@ function HeroBanner() {
             className='hero-banner__content-input-text text-md'
             onChange={ onInputChange }
           />
-          <img className='hero-banner__content-input-icon' src="svg/search.svg" />
+          <img className='hero-banner__content-input-icon' src="svg/search.svg" alt='Search icon' />
           <div className={`hero-banner__easter-egg ${ !!isDirty && 'show' }`}>Không có tìm được đâu...</div>
         </div>
       </div>

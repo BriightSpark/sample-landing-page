@@ -8,7 +8,9 @@ import {
   SingleTeaser,
   MultipleTeaser
 } from './components';
+import Testinomial from './components/testinomial/Testinomial';
 
+import '@splidejs/react-splide/css';
 import './styles/index.scss';
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
         <Listing />
         <SingleTeaser />
         <MultipleTeaser />
+        <Testinomial />
       </main>
       <Footer />
     </>

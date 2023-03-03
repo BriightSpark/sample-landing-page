@@ -1,1 +1,35 @@
 @import './comp/card.scss';
+
+.testinomial-wrapper {
+  margin: 120px 0;
+
+  .testinomial {
+    padding: 50px 0;
+
+    &__heading, &__preheading {
+      text-align: center;
+    }
+
+    &__preheading {
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: 20px;
+    }
+  }
+  
+  .splide__arrow--prev {
+    left: -20px;
+  }
+
+  .splide__arrow--next {
+    right: -20px;
+  }
+
+  .splide__arrow--prev, .splide__arrow--next {
+    background-color: var(--color-white);
+    opacity: 1;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.4);
+  }
+}

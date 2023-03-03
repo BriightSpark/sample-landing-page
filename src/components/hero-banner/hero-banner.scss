@@ -8,13 +8,15 @@
     overflow: hidden;
 
     &-image {
-      height: 100vh;
+      min-height: 100vh;
+      max-height: 150vh;
 
       @media (min-width: 768px) {
-        height: 100vh;
+        min-height: 100vh;
       }
       
       @media (min-width: 1730px) {
+        max-height: unset;
         height: auto;
         width: 100%;
       }

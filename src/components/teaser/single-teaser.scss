@@ -11,6 +11,10 @@
       padding-top: 240px;
     }
 
+    @media (min-width: 1440px) {
+      position: relative;
+    }
+
     &__image {
       position: absolute;
       left: 0;
@@ -18,8 +22,12 @@
       overflow: hidden;
       
       @media (min-width: 768px) {
-        padding-top: 70px;
+        margin-top: 70px;
         width: auto;
+      }
+
+      @media (min-width: 1440px) {
+        border-radius: 50px;
       }
 
       &--hidden {

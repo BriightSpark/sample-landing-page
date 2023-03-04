@@ -1,0 +1,26 @@
+.selector-wrapper {
+  display: block;
+  margin: auto;
+  width: fit-content;
+
+  .selector {  
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 80px;
+    border-radius: 40px;
+    padding: 6px;
+    background-color: #EEEEEE;
+
+    button {
+      padding: 8px 20px;
+      cursor: pointer;
+      transition: all var(--transition-time) ease;
+    }
+
+    .active {
+      background: var(--color-white);
+      border-radius: 32px;
+    }
+  }
+}

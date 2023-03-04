@@ -14,6 +14,7 @@ function Testinomial() {
     width: '100%',
     gap: '40px',
     arrows: true,
+    pagination: false,
     mediaQuery: 'min',
     breakpoints: {
       768: {

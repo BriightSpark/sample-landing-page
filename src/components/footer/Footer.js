@@ -9,32 +9,32 @@ function Footer() {
           </div>
           <div className="flex-1">
             <p>Services</p>
-            <span>Email Marketing</span>
-            <span>Campaigns</span>
-            <span>Branding</span>
+            <a href={ () => {} }>Email Marketing</a>
+            <a href={ () => {} }>Campaigns</a>
+            <a href={ () => {} }>Branding</a>
           </div>
           <div className="flex-1">
             <p>Furniture</p>
-            <span>Beds</span>
-            <span>Chair</span>
-            <span>All</span>
+            <a href={ () => {} }>Beds</a>
+            <a href={ () => {} }>Chair</a>
+            <a href={ () => {} }>All</a>
           </div>
           <div className="flex-1">
             <p>Follow Us</p>
-            <span className="facebook">Facebook</span>
-            <span className="twitter">Twitter</span>
-            <span className="instagram">Instagram</span>
+            <a href={ () => {} } className="facebook">Facebook</a>
+            <a href={ () => {} } className="twitter">Twitter</a>
+            <a href={ () => {} } className="instagram">Instagram</a>
           </div>
         </div>
         <div className="footer__copyright">
           <div>Copyright © 2021</div>
           <div>
-            <span className="margin-30">
+            <a href={ () => {} } className="margin-30">
               Terms & Conditions
-            </span>
-            <span>
+            </a>
+            <a href={ () => {} }>
               Privacy Policy
-            </span>
+            </a>
           </div>
         </div>
       </div>

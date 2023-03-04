@@ -7,7 +7,11 @@
   }
 
   &__information {
-    display: flex;
+    
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+    }
 
     .flex-1, .flex-2 {
       p {
@@ -15,24 +19,34 @@
         color: var(--color-primary);
       }
 
-      span {
+      a {
         display: block;
         margin-top: 16px;
+        color: var(--color-black);
         opacity: 0.8;
       }
     }
 
     .flex-1 {
       flex: 1;
+      width: 50%;
+      display: inline-block;
+      margin-top: 20px;
+
+      @media (min-width: 768px) {
+        width: unset;
+        margin: 0;
+      }
     }
 
     .flex-2 {
       flex: 2;
 
       p {
+        color: var(--color-black);
+
         @media (min-width: 768px) {
           width: 60%;
-          color: var(--color-black);
           opacity: 0.8;
         }
       }
@@ -53,6 +67,7 @@
     }
 
     * {
+      color: var(--color-black);
       opacity: 0.8;
     }
   }

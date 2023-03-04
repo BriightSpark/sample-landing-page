@@ -9,7 +9,7 @@ function Statistic() {
       <div className="statistic">
         <h3>Why Choosing Us</h3>
         {
-          data.map( node => <Stat { ...node } />)
+          data.map( ( node, index ) => <Stat key={ `node ${ index }` } { ...node } />)
         }
       </div>
     </div>
